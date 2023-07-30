@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meme Maker</title>
     <link rel="stylesheet" href="styles.css" />
@@ -116,6 +117,9 @@
     <button id="mode-btn">Fill</button>
     <button id="destroy-btn">Destroy</button>
     <button id="eraser-btn">Erase</button>
+    <input type="file" accept="image/*" id="file" />
+    <input type="text" id="text" />
+    <button id="save">Save image</button>
     <script src ="app.js"></script>
 </body>
 </html>
@@ -127,3 +131,18 @@ git branch -M main을 넣으니깐 오류가 해결됐다 내 생각엔 git add 
 <!-- 전체 선택 ctrl+shift+l하면 전체선택 된다 색깔들 편집할때 사용함 -> 2023 7/26 아직 안되는중 해결중 -->
 <!-- win유저이다보니 cmd + shift + L 과 같은걸 못찾아서 ㅠㅠ
 한참 구글링한 결과 win인 저는 shift + alt + i 로 하니 동일한 결과가 나왔습니다. 윈도우이신 분들은 참고하새오,, :( -->
+<!-- IE 문서 모드란?
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+IE는 인터넷 익스플로러를 의미하는 것으로 여러 가지 버전이 있다 (IE6부터 IE11까지)
+그런데 이들 IE간에 버전차이로 인해 같은 웹 문서라 하더라도 다르게 보여지는 경우가 있다
+이러한 문제를 해결하기 위해 MS에서 제공하는 기능이 바로 "호환성 보기"라는 기능이다
+이 호환성 보기를 다른 말로 쿼크 모드라고 하며
+IE 버전이 다르더라도 같은 화면을 볼 수 있도록 하는 것을 의미한다
+
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+위의 메타태그를 <head></head> 태그 사이에 삽입하면 된다
+content="IE=Edge"는 IE브라우저에서, 각 버전 중 가장 최신 표준 모드를 선택하는 문서 모드이다
+"IE=Edge"에 "IE=버전명"을 변경하면 웹 문서를 그 버전으로 보여주겠다는 의미이다 -->
+<!-- Failed to load resource: the server responded with a status of 404 (Not Found)
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />이코드르 집어넣으니 이 오류가 해결 되었다<. 
+ie에대해서 찾아보기(20230730) -->
